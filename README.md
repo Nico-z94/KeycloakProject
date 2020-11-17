@@ -1,21 +1,27 @@
+Configuración para proyecto educativo sobre Keycloak con ZUUL y EUREKA Server:
+
 # springboot-microservices-starter
 
-	- ZUUL for Proxy/API gateway
-	- EUREKA for Load balancing
-	- KEYCLOACK for Identity and Access Management
+Para la realización de este proyecto se utlizará:
+
+	- ZUUL para Proxy/API gateway
+	- EUREKA para Load balancing
+	- KEYCLOACK para admiminstración y gestión de credenciales (Identity y Access Management)
+	La versión de Keycloak que se necesita para este proyecto es la siguiente: https://www.keycloak.org/archive/downloads-4.8.3.html
+	
 
 - ZUUL Server (http://localhost:8762)
 	-- startup - mvn install && mvn spring-boot:run
 - EUREKA Server (http://localhost:8761) 
 	-- startup - mvn install && mvn spring-boot:run
 - KEYCLOACK Server (http://localhost:8180)
-    -- startup - .\standalone.bat -Djboss.socket.binding.port-offset=100
+	-- startup - .\standalone.bat -Djboss.socket.binding.port-offset=100
 - API (http://localhost:8080)
 	-- startup - mvn install && mvn spring-boot:run
 	
-- Upload or create Keyclock realm using zuul-server/config/quickstart-realm.json	
+- Tiene la opción de actualizar o crear un reino (realm) de Keycloak usando zuul-server/config/quickstart-realm.json	
 	
-- Authenticate and get your API token.
+- Autenticación y obtención del token de la API.
 
 	POST /auth/realms/spring-boot-quickstart/protocol/openid-connect/token HTTP/1.1
 	Host: localhost
@@ -25,7 +31,7 @@
 	Postman-Token: 6c331f76-0485-4f34-ac86-82df9a3485f1
 	username=alicepassword=alicegrant_type=password
 	
-- Access microservice using JWT.
+- Acceso a los microservicios usando JWT.
 
 	GET /api/v1/resourceb HTTP/1.1
 	Host: localhost

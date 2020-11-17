@@ -7,12 +7,14 @@ Para la realización de este proyecto se utlizará:
 	- ZUUL para Proxy/API gateway
 	- EUREKA para Load balancing
 	- KEYCLOACK para admiminstración y gestión de credenciales (Identity y Access Management)
+	
 
 - ZUUL Server (http://localhost:8762)
 	-- startup - mvn install && mvn spring-boot:run
 - EUREKA Server (http://localhost:8761) 
 	-- startup - mvn install && mvn spring-boot:run
 - KEYCLOACK Server (http://localhost:8180)
+La versión de Keycloak que se necesita para este proyecto es la siguiente: https://www.keycloak.org/archive/downloads-4.8.3.html
     -- startup - .\standalone.bat -Djboss.socket.binding.port-offset=100
 - API (http://localhost:8080)
 	-- startup - mvn install && mvn spring-boot:run

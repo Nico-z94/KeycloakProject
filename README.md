@@ -38,3 +38,19 @@ Para la realización de este proyecto se utlizará:
 	Authorization: Bearer <JSON Web Token>
 	cache-control: no-cache
 	Postman-Token: 52b7a4a5-5b42-41e9-a81e-2f3007c92e9a
+
+Configuracíon para levantar proyectos en Docker
+
+   - Crear el .jar en los proyectos
+        - Ir a la carpeta raiz del proyecto (ej: api-service)
+        - Correr mvn package
+   - Crear Dockerfile en la misma altura que el pom.xml
+        - Completar con los parámetros de lanzamiento de la imagen de Docker
+        - `FROM openjdk:8-jdk-alpine
+          VOLUME /tmp
+          COPY target/*.jar app.jar
+          ENTRYPOINT ["java","-jar","/app.jar"]`
+   - Ejecutar los siguientes comandos a la altura del Dockerfile
+        - `docker build -f Dockerfile -t api-service . ` 
+        - `docker run -p 8080:8080 -w /app api-service` 
+           

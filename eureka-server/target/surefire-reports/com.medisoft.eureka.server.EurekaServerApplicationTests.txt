@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.medisoft.eureka.server.EurekaServerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.796 s - in com.medisoft.eureka.server.EurekaServerApplicationTests

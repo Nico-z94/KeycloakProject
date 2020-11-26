@@ -1,0 +1,4 @@
+2020-11-26 10:17:10,374 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2020-11-26 10:17:13,352 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2020-11-26 10:17:13,384 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2020-11-26 10:17:13,612 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal

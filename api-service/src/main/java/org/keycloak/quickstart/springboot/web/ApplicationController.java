@@ -43,6 +43,7 @@ public class ApplicationController {
     }
 
     @RequestMapping(value = "/v1/resourceb", method = RequestMethod.GET)
+    @PreAuthorize("hasAnyRole('ROLE_admin')")
     public String handleResourceB() {
         LOGGER.info("==== resourceb ====");
         return createResponse();

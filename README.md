@@ -40,14 +40,12 @@ Para la realización de este proyecto se utlizará:
 	Postman-Token: 52b7a4a5-5b42-41e9-a81e-2f3007c92e9a
 
 - Configuracíon para levantar proyectos en Docker
-- Ejecutar el siguiente comando para cada microservicio en su respectivo directorio:
+	- Ejecutar el siguiente comando para cada microservicio en su respectivo directorio:
  	- `docker build -f Dockerfile -t {nombre_microservicio} .`
 
-- En nuestro caso serían {nombre_microservicio}:
-	-api-service
-	-zuul-server
-	-eureka-server
+	- En nuestro caso serían {nombre_microservicio}:
+	api-service, zuul-server, eureka-server
 
-- Ejecutar el siguiente comando en la terminal utilizando docker-compose en el directorio donde se encuentra guardado el proyecto:
+	- Ejecutar el siguiente comando en la terminal utilizando docker-compose en el directorio donde se encuentra guardado el proyecto:
         - `docker-compose up` 
            
